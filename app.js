@@ -236,6 +236,12 @@ function computeBlended(inputPrice, outputPrice) {
   return 0.9573 * inputPrice + 0.0427 * outputPrice;
 }
 
+// Cache-read price; falls back to '—' when the model has no cache pricing.
+function fmtCachePrice(v) {
+  if (v == null) return '—';
+  return '$' + (v < 0.01 ? v.toFixed(4) : v.toFixed(2));
+}
+
 function stdDev(values) {
   if (values.length < 2) return 0;
   const mean = values.reduce((a, b) => a + b, 0) / values.length;
@@ -979,7 +985,7 @@ function updateTable(filtered) {
   const dir = state.sortDirection;
 
   const sorted = [...filtered].sort((a, b) => {
-    let va = a[col], vb = b[col];
+    let va = a[col] ?? -Infinity, vb = b[col] ?? -Infinity; // null cachePrice sorts last
     if (typeof va === 'string') {
       return dir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va);
     }
@@ -996,7 +1002,7 @@ function updateTable(filtered) {
   if (sorted.length === 0) {
     tbody.innerHTML = `
       <tr>
-        <td colspan="10" class="empty-state">
+        <td colspan="11" class="empty-state">
           <p style="margin-bottom: 8px;">No models match your filters</p>
           <button class="reset-btn" onclick="resetFilters()">Reset Filters</button>
         </td>
@@ -1009,6 +1015,7 @@ function updateTable(filtered) {
         <td>${escapeHtml(m.model)}${openBadgeHtml(m)}</td>
         <td class="num">$${m.inputPrice.toFixed(2)}</td>
         <td class="num">$${m.outputPrice.toFixed(2)}</td>
+        <td class="num">${fmtCachePrice(m.cachePrice)}</td>
         <td class="num">$${m.blended.toFixed(2)}</td>
         <td class="num">${m.livebench.toFixed(2)}</td>
         <td class="num">${m.aaScore}</td>
@@ -1077,6 +1084,7 @@ const COMPARE_ROWS = [
   { label: 'Provider', key: 'provider' },
   { label: 'Input $/1M', key: 'inputPrice', fmt: v => '$' + v.toFixed(2), best: 'min' },
   { label: 'Output $/1M', key: 'outputPrice', fmt: v => '$' + v.toFixed(2), best: 'min' },
+  { label: 'Cache $/1M', key: 'cachePrice', fmt: fmtCachePrice, best: 'min' },
   { label: 'Blended $/1M', key: 'blended', fmt: v => '$' + v.toFixed(2), best: 'min' },
   { label: 'LiveBench', key: 'livebench', fmt: v => v.toFixed(2), best: 'max' },
   { label: 'AA Score', key: 'aaScore', fmt: v => String(v), best: 'max' },
@@ -2302,7 +2310,7 @@ function setChatLoading(isLoading) {
 // the model's context with the whole dataset.
 const TOOL_MAX_ROWS = 25;
 
-const TOOL_SORT_KEYS = ['value', 'performance', 'blended', 'inputPrice', 'outputPrice',
+const TOOL_SORT_KEYS = ['value', 'performance', 'blended', 'inputPrice', 'outputPrice', 'cachePrice',
   'livebench', 'aaScore', 'model', 'provider'];
 
 function toolOk(payload) {
@@ -2321,8 +2329,8 @@ function getToolModelSets() {
 }
 
 function compareByKey(a, b, key, asc) {
-  const va = a[key];
-  const vb = b[key];
+  const va = a[key] ?? -Infinity; // null cachePrice sorts last
+  const vb = b[key] ?? -Infinity;
   let result = typeof va === 'string' ? va.localeCompare(vb) : va - vb;
   if (!asc) result = -result;
   // Tie-break on name so results are stable regardless of data.json ordering.
@@ -2345,6 +2353,7 @@ function serializeModel(m, detail) {
     ...base,
     inputPrice: round2(m.inputPrice),
     outputPrice: round2(m.outputPrice),
+    cachePrice: m.cachePrice == null ? null : round2(m.cachePrice),
     livebench: round2(m.livebench),
     aaScore: m.aaScore,
   };
