@@ -61,6 +61,11 @@ http://localhost:8000
 
 Model data lives in `data.json`.
 
+Prices (`inputPrice`, `outputPrice`, `cachePrice`) are auto-refreshed daily at 00:00 UTC from the
+[OpenRouter models API](https://openrouter.ai/api/v1/models?output_modalities=all) by
+`scripts/update-prices.mjs`, run via GitHub Actions (`.github/workflows/update-prices.yml`).
+Run it manually with `node scripts/update-prices.mjs`.
+
 Add a model:
 
 ```json
@@ -69,6 +74,7 @@ Add a model:
   "model": "gpt-oss-120b",
   "inputPrice": 0.037,
   "outputPrice": 0.17,
+  "cachePrice": 0.0037,
   "livebench": 46.09,
   "aaScore": 24,
   "open": true

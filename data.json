@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-29",
+  "lastUpdated": "2026-08-03",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -43,25 +43,28 @@
       "outputPrice": 30,
       "livebench": 81.05,
       "aaScore": 59,
-      "open": false
+      "open": false,
+      "cachePrice": 0.5
     },
     {
       "provider": "OpenAI",
       "model": "GPT-5.6 Terra",
-      "inputPrice": 2,
-      "outputPrice": 12,
+      "inputPrice": 1,
+      "outputPrice": 6,
       "livebench": 77.94,
       "aaScore": 55,
-      "open": false
+      "open": false,
+      "cachePrice": 0.1
     },
     {
       "provider": "OpenAI",
       "model": "GPT-5.6 Luna",
-      "inputPrice": 0.2,
-      "outputPrice": 1.2,
+      "inputPrice": 0.1,
+      "outputPrice": 0.6,
       "livebench": 73.56,
       "aaScore": 51,
-      "open": false
+      "open": false,
+      "cachePrice": 0.01
     },
     {
       "provider": "xAI",
@@ -70,16 +73,18 @@
       "outputPrice": 6,
       "livebench": 75.77,
       "aaScore": 54,
-      "open": false
+      "open": false,
+      "cachePrice": 0.3
     },
     {
       "provider": "Anthropic",
       "model": "Claude Sonnet 5",
-      "inputPrice": 3,
-      "outputPrice": 15,
+      "inputPrice": 2,
+      "outputPrice": 10,
       "livebench": 76.04,
       "aaScore": 53,
-      "open": false
+      "open": false,
+      "cachePrice": 0.2
     },
     {
       "provider": "Alibaba",
@@ -88,7 +93,8 @@
       "outputPrice": 1.95,
       "livebench": 68.91,
       "aaScore": 40,
-      "open": false
+      "open": false,
+      "cachePrice": null
     },
     {
       "provider": "DeepSeek",
@@ -97,16 +103,18 @@
       "outputPrice": 0.87,
       "livebench": 71.57,
       "aaScore": 44,
-      "open": true
+      "open": true,
+      "cachePrice": 0.003625
     },
     {
       "provider": "Z.ai",
       "model": "GLM 5.2",
-      "inputPrice": 1.4,
-      "outputPrice": 4.4,
+      "inputPrice": 1.19,
+      "outputPrice": 3.74,
       "livebench": 73.16,
       "aaScore": 51,
-      "open": true
+      "open": true,
+      "cachePrice": 0.221
     },
     {
       "provider": "MiniMax",
@@ -115,7 +123,8 @@
       "outputPrice": 1.2,
       "livebench": 67.26,
       "aaScore": 44,
-      "open": true
+      "open": true,
+      "cachePrice": 0.06
     },
     {
       "provider": "DeepSeek",
@@ -124,7 +133,8 @@
       "outputPrice": 0.28,
       "livebench": 65.48,
       "aaScore": 40,
-      "open": true
+      "open": true,
+      "cachePrice": 0.028
     },
     {
       "provider": "Google",
@@ -133,7 +143,8 @@
       "outputPrice": 9,
       "livebench": 74.64,
       "aaScore": 50,
-      "open": false
+      "open": false,
+      "cachePrice": 0.15
     },
     {
       "provider": "Google",
@@ -142,7 +153,8 @@
       "outputPrice": 12,
       "livebench": 76.95,
       "aaScore": 46,
-      "open": false
+      "open": false,
+      "cachePrice": 0.2
     },
     {
       "provider": "Alibaba",
@@ -151,7 +163,8 @@
       "outputPrice": 4.425,
       "livebench": 73.14,
       "aaScore": 46,
-      "open": false
+      "open": false,
+      "cachePrice": 0.295
     },
     {
       "provider": "Anthropic",
@@ -160,7 +173,8 @@
       "outputPrice": 50,
       "livebench": 82.97,
       "aaScore": 60,
-      "open": false
+      "open": false,
+      "cachePrice": 1
     },
     {
       "provider": "Moonshot AI",
@@ -169,7 +183,8 @@
       "outputPrice": 15,
       "livebench": 79.19,
       "aaScore": 57,
-      "open": true
+      "open": true,
+      "cachePrice": 0.3
     },
     {
       "provider": "Meta",
@@ -178,7 +193,8 @@
       "outputPrice": 4.25,
       "livebench": 75.3,
       "aaScore": 51,
-      "open": false
+      "open": false,
+      "cachePrice": 0.15
     },
     {
       "provider": "Thinking Machines",
@@ -187,7 +203,8 @@
       "outputPrice": 4.05,
       "livebench": 71.92,
       "aaScore": 41,
-      "open": true
+      "open": true,
+      "cachePrice": 0.17
     },
     {
       "provider": "Google",
@@ -196,7 +213,8 @@
       "outputPrice": 7.5,
       "livebench": 73.59,
       "aaScore": 50,
-      "open": false
+      "open": false,
+      "cachePrice": 0.15
     },
     {
       "provider": "Google",
@@ -205,7 +223,8 @@
       "outputPrice": 2.5,
       "livebench": 63.94,
       "aaScore": 36,
-      "open": false
+      "open": false,
+      "cachePrice": 0.03
     },
     {
       "provider": "Anthropic",
@@ -214,7 +233,8 @@
       "outputPrice": 25,
       "livebench": 80.08,
       "aaScore": 61,
-      "open": false
+      "open": false,
+      "cachePrice": 0.5
     }
   ]
 }
