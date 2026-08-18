@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17",
+  "lastUpdated": "2026-08-18",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -39,32 +39,32 @@
     {
       "provider": "OpenAI",
       "model": "GPT-5.6 Sol",
-      "inputPrice": 5,
-      "outputPrice": 30,
+      "inputPrice": 2.5,
+      "outputPrice": 15,
       "livebench": 81.05,
       "aaScore": 59,
       "open": false,
-      "cachePrice": 0.5
+      "cachePrice": 0.25
     },
     {
       "provider": "OpenAI",
       "model": "GPT-5.6 Terra",
-      "inputPrice": 1,
-      "outputPrice": 6,
+      "inputPrice": 2,
+      "outputPrice": 12,
       "livebench": 77.94,
       "aaScore": 55,
       "open": false,
-      "cachePrice": 0.1
+      "cachePrice": 0.2
     },
     {
       "provider": "OpenAI",
       "model": "GPT-5.6 Luna",
-      "inputPrice": 0.1,
-      "outputPrice": 0.6,
+      "inputPrice": 0.2,
+      "outputPrice": 1.2,
       "livebench": 73.56,
       "aaScore": 51,
       "open": false,
-      "cachePrice": 0.01
+      "cachePrice": 0.02
     },
     {
       "provider": "xAI",
@@ -99,22 +99,22 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Pro",
-      "inputPrice": 0.435,
-      "outputPrice": 0.87,
+      "inputPrice": 1.32,
+      "outputPrice": 3.96,
       "livebench": 71.57,
       "aaScore": 44,
       "open": true,
-      "cachePrice": 0.003625
+      "cachePrice": 0.044
     },
     {
       "provider": "Z.ai",
       "model": "GLM 5.2",
-      "inputPrice": 0.462,
-      "outputPrice": 1.452,
+      "inputPrice": 0.5,
+      "outputPrice": 3.15,
       "livebench": 73.16,
       "aaScore": 51,
       "open": true,
-      "cachePrice": 0.0858
+      "cachePrice": 0.115
     },
     {
       "provider": "MiniMax",
@@ -129,12 +129,12 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Flash",
-      "inputPrice": 0.06426,
-      "outputPrice": 0.12852,
+      "inputPrice": 0.0826,
+      "outputPrice": 0.1652,
       "livebench": 65.48,
       "aaScore": 40,
       "open": true,
-      "cachePrice": 0.012852
+      "cachePrice": 0.01652
     },
     {
       "provider": "Google",
