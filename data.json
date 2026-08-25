@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24",
+  "lastUpdated": "2026-08-25",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -99,22 +99,22 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Pro",
-      "inputPrice": 0.519216,
-      "outputPrice": 1.038432,
+      "inputPrice": 0.790308,
+      "outputPrice": 1.580616,
       "livebench": 71.57,
       "aaScore": 44,
       "open": true,
-      "cachePrice": 0.043268
+      "cachePrice": 0.065859
     },
     {
       "provider": "Z.ai",
       "model": "GLM 5.2",
-      "inputPrice": 0.966,
-      "outputPrice": 3.036,
+      "inputPrice": 1.19,
+      "outputPrice": 3.74,
       "livebench": 73.16,
       "aaScore": 51,
       "open": true,
-      "cachePrice": 0.1932
+      "cachePrice": 0.221
     },
     {
       "provider": "MiniMax",
@@ -129,12 +129,12 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Flash",
-      "inputPrice": 0.05866,
-      "outputPrice": 0.11732,
+      "inputPrice": 0.088606,
+      "outputPrice": 0.177212,
       "livebench": 65.48,
       "aaScore": 40,
       "open": true,
-      "cachePrice": 0.011732
+      "cachePrice": 0.017721
     },
     {
       "provider": "Google",
@@ -199,12 +199,12 @@
     {
       "provider": "Thinking Machines",
       "model": "Inkling",
-      "inputPrice": 1,
+      "inputPrice": 0.95,
       "outputPrice": 4.05,
       "livebench": 71.92,
       "aaScore": 41,
       "open": true,
-      "cachePrice": 0.17
+      "cachePrice": 0.16
     },
     {
       "provider": "Google",
