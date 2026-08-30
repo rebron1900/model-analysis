@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29",
+  "lastUpdated": "2026-08-30",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -99,12 +99,12 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Pro",
-      "inputPrice": 0.680862,
-      "outputPrice": 1.361724,
+      "inputPrice": 0.498336,
+      "outputPrice": 0.996672,
       "livebench": 71.57,
       "aaScore": 44,
       "open": true,
-      "cachePrice": 0.056739
+      "cachePrice": 0.041528
     },
     {
       "provider": "Z.ai",
@@ -129,12 +129,12 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Flash",
-      "inputPrice": 0.08484,
-      "outputPrice": 0.16968,
+      "inputPrice": 0.08064,
+      "outputPrice": 0.16128,
       "livebench": 65.48,
       "aaScore": 40,
       "open": true,
-      "cachePrice": 0.016968
+      "cachePrice": 0.016128
     },
     {
       "provider": "Google",
@@ -199,12 +199,12 @@
     {
       "provider": "Thinking Machines",
       "model": "Inkling",
-      "inputPrice": 0.95,
+      "inputPrice": 1,
       "outputPrice": 4.05,
       "livebench": 71.92,
       "aaScore": 41,
       "open": true,
-      "cachePrice": 0.16
+      "cachePrice": 0.17
     },
     {
       "provider": "Google",
