@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31",
+  "lastUpdated": "2026-09-01",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -129,12 +129,12 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Flash",
-      "inputPrice": 0.088606,
-      "outputPrice": 0.177212,
+      "inputPrice": 0.08092,
+      "outputPrice": 0.16184,
       "livebench": 65.48,
       "aaScore": 40,
       "open": true,
-      "cachePrice": 0.017721
+      "cachePrice": 0.016184
     },
     {
       "provider": "Google",
