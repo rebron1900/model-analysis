@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06",
+  "lastUpdated": "2026-09-07",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -99,12 +99,12 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Pro",
-      "inputPrice": 0.768732,
-      "outputPrice": 1.537464,
+      "inputPrice": 1.0353,
+      "outputPrice": 2.0706,
       "livebench": 71.57,
       "aaScore": 44,
       "open": true,
-      "cachePrice": 0.064061
+      "cachePrice": 0.086275
     },
     {
       "provider": "Z.ai",
@@ -129,12 +129,12 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Flash",
-      "inputPrice": 0.08218,
-      "outputPrice": 0.16436,
+      "inputPrice": 0.088606,
+      "outputPrice": 0.177212,
       "livebench": 65.48,
       "aaScore": 40,
       "open": true,
-      "cachePrice": 0.016436
+      "cachePrice": 0.017721
     },
     {
       "provider": "Google",
