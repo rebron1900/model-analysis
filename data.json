@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-07",
+  "lastUpdated": "2026-09-08",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -99,12 +99,12 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Pro",
-      "inputPrice": 1.0353,
-      "outputPrice": 2.0706,
+      "inputPrice": 0.95526,
+      "outputPrice": 1.91052,
       "livebench": 71.57,
       "aaScore": 44,
       "open": true,
-      "cachePrice": 0.086275
+      "cachePrice": 0.079605
     },
     {
       "provider": "Z.ai",
