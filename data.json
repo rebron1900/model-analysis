@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25",
+  "lastUpdated": "2026-10-26",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -179,12 +179,12 @@
     {
       "provider": "Moonshot AI",
       "model": "Kimi K3",
-      "inputPrice": 0.239,
-      "outputPrice": 10.8,
+      "inputPrice": 0.226,
+      "outputPrice": 20,
       "livebench": 79.19,
       "aaScore": 57,
       "open": true,
-      "cachePrice": 0.21
+      "cachePrice": 0.216
     },
     {
       "provider": "Meta",
