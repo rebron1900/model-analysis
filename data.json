@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-27",
+  "lastUpdated": "2026-10-28",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -84,7 +84,7 @@
       "livebench": 76.04,
       "aaScore": 53,
       "open": false,
-      "cachePrice": 0.2
+      "cachePrice": 0.1
     },
     {
       "provider": "Alibaba",
@@ -114,7 +114,7 @@
       "livebench": 73.16,
       "aaScore": 51,
       "open": true,
-      "cachePrice": 0.033
+      "cachePrice": 0.0331
     },
     {
       "provider": "MiniMax",
@@ -179,12 +179,12 @@
     {
       "provider": "Moonshot AI",
       "model": "Kimi K3",
-      "inputPrice": 0.2,
+      "inputPrice": 0.15,
       "outputPrice": 20,
       "livebench": 79.19,
       "aaScore": 57,
       "open": true,
-      "cachePrice": 0.19
+      "cachePrice": 0.14
     },
     {
       "provider": "Meta",
