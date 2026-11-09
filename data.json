@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-09",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -104,7 +104,7 @@
       "livebench": 71.57,
       "aaScore": 44,
       "open": true,
-      "cachePrice": 0.106
+      "cachePrice": 0.097
     },
     {
       "provider": "Z.ai",
