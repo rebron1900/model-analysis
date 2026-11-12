@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-12",
   "providers": {
     "DeepSeek": {
       "color": "#06b6d4"
@@ -39,12 +39,12 @@
     {
       "provider": "OpenAI",
       "model": "GPT-5.6 Sol",
-      "inputPrice": 4,
-      "outputPrice": 20,
+      "inputPrice": 4.4,
+      "outputPrice": 22,
       "livebench": 81.05,
       "aaScore": 59,
       "open": false,
-      "cachePrice": 0.4
+      "cachePrice": 0.44
     },
     {
       "provider": "OpenAI",
@@ -129,12 +129,12 @@
     {
       "provider": "DeepSeek",
       "model": "DeepSeek V4 Flash",
-      "inputPrice": 0.051,
-      "outputPrice": 0.567,
+      "inputPrice": 0.022,
+      "outputPrice": 0.4,
       "livebench": 65.48,
       "aaScore": 40,
       "open": true,
-      "cachePrice": 0.018
+      "cachePrice": 0.004
     },
     {
       "provider": "Google",
